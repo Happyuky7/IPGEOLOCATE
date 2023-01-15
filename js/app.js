@@ -57,7 +57,7 @@ document.getElementById('searchBtn').addEventListener('click', function () {
 
 function initMap() {
 
-    var endpoint = 'http://ip-api.com/json';
+    var endpoint = 'https://ip-api.com/json';
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -101,7 +101,7 @@ function initMap() {
 
     document.getElementById('searchBtn').addEventListener('click', function () {
         var search = document.getElementById('search').value;
-        var endpoint = 'http://ip-api.com/json/' + search;
+        var endpoint = 'https://ip-api.com/json' + search;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
